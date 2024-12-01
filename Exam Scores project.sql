@@ -1,11 +1,11 @@
---QUESTIONS to address
+/*QUESTIONS to address
 
---What features or factors which affect the test results the most?
---Are there interacting features that affect test scores?
+What features or factors which affect the test results the most?
+Are there interacting features that affect test scores?
+*/
+Clean the data
 
--- Clean the data
-
---replacing “none” and “completed” which two texts describing test preparation in TestPrep column. Replacing them wit more consistent texts, that is, “not_prepared”, and “prepared”, respectively  
+-- replacing “none” and “completed” which two texts describing test preparation in TestPrep column. Replacing them wit more consistent texts, that is, “not_prepared”, and “prepared”, respectively  
 
 UPDATE [Project_exam_scores].[dbo].[Expanded_data_with_more_features]
 SET TestPrep = replace(TestPrep, 'none', 'not_prepared')
